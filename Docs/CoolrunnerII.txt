@@ -17,7 +17,7 @@ instalação:
           ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 /usr/lib/x86_64-linux-gnu/libncurses.so.5, depois disso instalalou sem problema algum.
 
 2 - Xilinx ISE 14.7 método 2
-    2.1 - Usar a máquina virtual que vem no dentro do arquivo Xilinx_ISE_DS_Lin_14.7_1015_1.tar
+    2.1 - Usar a máquina virtual que vem no dentro do arquivo Xilinx_ISE_14.7_WIn10_14.7_VM_0203_1.zip esse arquivo está em smb://orange01.local/opensoftware/Documentos/0000_Eletronica/Xilinx. Esse arquivo é para instalação no windows 10 e 11.
 Obs.: Mesmo usando a máquina virtual eu tive que instalar o ISE que está nesse arquivo, pois os drivers para o cabo estão dentro do diretório dele, deve ter uma forma de só instalar os drivers para o cabo sem instalar o ISE, mas eu não procurei por essa opção.
 
 
