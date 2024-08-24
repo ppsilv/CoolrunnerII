@@ -45,10 +45,9 @@ In the Tools tab of ISE 14.7, run iMPACT
       the recorder on the parallel port that we are not using. * Now click on the xc8572xl icon and the menu should appear in the iMPACT Processes box, including 
       the PROGRAM option.
 * Program the chip by clicking on the Program option.
-Done, if everything went well, you will see the following text in the console:
 
-Final messages
-  
+When done, if everything went well, you will see the following text messages in the console:
+
      '1': Erasing device...
      '1': Erasure completed successfully.
      '1': Programming device...
