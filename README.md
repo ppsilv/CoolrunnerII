@@ -49,14 +49,14 @@ Done, if everything went well, you will see the following text in the console:
 
 0 - Final messages
   
- '1': Erasing device...
- '1': Erasure completed successfully.
- '1': Programming device...
- done.
- '1': Putting device in ISP mode...done.
- '1': Putting device in ISP mode...done.
- '1': Programming completed successfully.
- PROGRESS_END - End Operation.
- Elapsed time = 3 sec.
+     '1': Erasing device...
+     '1': Erasure completed successfully.
+     '1': Programming device...
+     done.
+     '1': Putting device in ISP mode...done.
+     '1': Putting device in ISP mode...done.
+     '1': Programming completed successfully.
+     PROGRESS_END - End Operation.
+     Elapsed time = 3 sec.
  
 and the LED on the inverter port should be on and when the button is pressed, it goes out and the LED on the non-inverter port should light up.
