@@ -43,15 +43,15 @@ Installation:
     * In the Edit tab of Impact, run the Launch Wizard
     * In the Welcome to iMPACT window that opens, click OK
     * In the Auto assign Configuration Files Query Dialo, click YES
-    * In the Assign New Configuration Files window, look for CPLDIntro3LEDInverse.jed, which was created within the Schematic-CPLDIntro3LEDinverse project when you executed item 4.2.
-    
+    * In the Assign New Configuration Files window, look for CPLDIntro3LEDInverse.jed, which was created within the Schematic-CPLDIntro3LEDinverse project when you 
+      executed item 4.2.
     * In the Device Programming Properties window that opens, click OK
-        Note: I did this step by chance and it worked, but I don't know if this is the correct way, but I didn't see any other way to make the menu appear in the iMPACT Processes box.
-    
-    * In the Output item of the top menu, choose the Cable Reset option. Some errors will appear in the console, but don't worry about them, as they are related to the recorder on the parallel port that we are not using. * Now click on the xc8572xl icon and the menu should appear in the iMPACT Processes box, including the PROGRAM option.
-    
+        Note: I did this step by chance and it worked, but I don't know if this is the correct way, but I didn't see any other way to make the menu appear in the 
+        iMPACT Processes box.
+    * In the Output item of the top menu, choose the Cable Reset option. Some errors will appear in the console, but don't worry about them, as they are related to 
+        the recorder on the parallel port that we are not using. * Now click on the xc8572xl icon and the menu should appear in the iMPACT Processes box, including 
+        the PROGRAM option.
     * Program the chip by clicking on the Program option.
-    
     * Done, if everything went well, you will see the following text in the console:
         '1': Erasing device...
         '1': Erasure completed successfully.
@@ -62,5 +62,4 @@ Installation:
         '1': Programming completed successfully.
         PROGRESS_END - End Operation.
         Elapsed time = 3 sec.
-    
     and the LED on the inverter port should be on and when the button is pressed, it goes out and the LED on the non-inverter port should light up.
