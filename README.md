@@ -47,7 +47,7 @@ In the Tools tab of ISE 14.7, run iMPACT
 * Program the chip by clicking on the Program option.
 Done, if everything went well, you will see the following text in the console:
 
-0 - Final messages
+Final messages
   
      '1': Erasing device...
      '1': Erasure completed successfully.
