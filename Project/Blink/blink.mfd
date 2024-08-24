@@ -1,0 +1,1670 @@
+MDF Database:  version 1.0
+MDF_INFO | blink | XC9572XL-10-VQ44
+MACROCELL | 1 | 16 | togl
+ATTRIBUTES | 4621058 | 0
+OUTPUTMC | 2 | 0 | 1 | 1 | 15
+INPUTS | 20 | Reset  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<0>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | EXP19_.EXP
+INPUTMC | 19 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 17
+INPUTP | 1 | 59
+EXPORTS | 1 | 1 | 15
+IMPORTS | 1 | 1 | 17
+EQ | 40 | 
+   led1.T = Reset & count<15> & count<16> & count<17> & 
+	count<18>
+	# Reset & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<16> & count<17> & count<18>
+;Imported pterms FB2_18
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<5> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<6> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<7> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<9> & 
+	count<18>
+	# Reset & count<0> & count<11> & count<12> & 
+	count<13> & count<14> & count<16> & count<17> & count<4> & 
+	count<9> & count<18>
+;Imported pterms FB2_1
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<1> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<2> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<3> & count<4> & 
+	count<9> & count<18>;
+   led1.CLK = Clock;	// GCK
+    togl.EXP  =  count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 2 | 4 | count<0>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 39 | 1 | 15 | 2 | 4 | 3 | 5 | 1 | 8 | 1 | 5 | 2 | 0 | 2 | 15 | 3 | 10 | 2 | 10 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 13 | 0 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 10 | 1 | 11 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 14 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 8 | 3 | 16
+INPUTS | 15 | count<0>  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<5>  | count<9>  | count<7>  | EXP22_.EXP  | Reset
+INPUTMC | 14 | 2 | 4 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 9 | 1 | 14 | 3 | 17 | 2 | 3
+INPUTP | 1 | 59
+IMPORTS | 1 | 2 | 3
+EQ | 28 | 
+   !count<0>.T = !count<0> & count<15> & count<16> & count<17> & 
+	count<18>
+	# !count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<16> & count<17> & count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<5> & count<9> & 
+	count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<7> & count<9> & 
+	count<18>
+;Imported pterms FB3_4
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<6> & count<9> & 
+	count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<9> & 
+	count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<1> & count<4> & 
+	count<9> & count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<2> & count<4> & 
+	count<9> & count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<3> & count<4> & 
+	count<9> & count<18>;
+   count<0>.CLK = Clock;	// GCK
+   count<0>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 3 | 5 | count<10>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 30 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 13 | 2 | 7 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 3 | 2 | 6 | 1 | 13 | 0 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 7 | 1 | 15 | 2 | 2 | 2 | 5 | 2 | 11 | 2 | 14 | 2 | 17
+INPUTS | 21 | count<10>  | count<15>  | count<16>  | count<17>  | count<18>  | count<11>  | count<12>  | count<13>  | count<14>  | count<0>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<9>  | Reset  | EXP34_.EXP
+INPUTMC | 20 | 3 | 5 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14 | 3 | 4
+INPUTP | 1 | 59
+IMPORTS | 1 | 3 | 4
+EQ | 28 | 
+   count<10>.T = count<10> & count<15> & count<16> & count<17> & 
+	count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<0> & !count<17> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9> & !count<18>
+;Imported pterms FB4_5
+	# count<0> & !count<16> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9>
+	# count<0> & !count<11> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>;
+   count<10>.CLK = Clock;	// GCK
+   count<10>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 1 | 9 | count<11>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 47 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 13 | 2 | 7 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 15 | 2 | 6 | 1 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 6
+INPUTS | 15 | count<11>  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<12>  | count<13>  | count<14>  | count<2>  | count<4>  | count<9>  | count<3>  | EXP14_.EXP  | Reset
+INPUTMC | 14 | 1 | 9 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 14 | 1 | 12 | 1 | 14 | 2 | 8 | 1 | 8
+INPUTP | 1 | 59
+EXPORTS | 1 | 1 | 10
+IMPORTS | 1 | 1 | 8
+EQ | 47 | 
+   count<11>.T = count<11> & count<15> & count<16> & count<17> & 
+	count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+;Imported pterms FB2_9
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB2_8
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & count<10> & !count<17> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+;Imported pterms FB2_7
+	# count<0> & count<10> & !count<16> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9> & !count<18>;
+   count<11>.CLK = Clock;	// GCK
+   count<11>.AR = !Reset;
+    count<11>.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 1 | 6 | count<12>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 46 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 13 | 2 | 7 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 15 | 2 | 6 | 1 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 6
+INPUTS | 21 | count<12>  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<13>  | count<14>  | count<0>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<9>  | Reset  | EXP12_.EXP
+INPUTMC | 20 | 1 | 6 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 2 | 1 | 2 | 16 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14 | 1 | 5
+INPUTP | 1 | 59
+EXPORTS | 1 | 1 | 7
+IMPORTS | 1 | 1 | 5
+EQ | 47 | 
+   count<12>.T = count<12> & count<15> & count<16> & count<17> & 
+	count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+;Imported pterms FB2_6
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB2_5
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & !count<15> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & !count<17> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+;Imported pterms FB2_4
+	# count<0> & count<10> & count<11> & !count<16> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9> & !count<18>;
+   count<12>.CLK = Clock;	// GCK
+   count<12>.AR = !Reset;
+    count<12>.EXP  =  count<0> & count<10> & !count<16> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9> & !count<18>
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 2 | 1 | count<13>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 46 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 13 | 2 | 7 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 15 | 2 | 6 | 1 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 6
+INPUTS | 15 | count<13>  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<12>  | count<14>  | count<5>  | count<9>  | count<7>  | EXP20_.EXP  | EXP21_.EXP  | Reset
+INPUTMC | 14 | 2 | 1 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 16 | 3 | 9 | 1 | 14 | 3 | 17 | 2 | 0 | 2 | 2
+INPUTP | 1 | 59
+IMPORTS | 2 | 2 | 0 | 2 | 2
+EQ | 40 | 
+   count<13>.T = count<13> & count<15> & count<16> & count<17> & 
+	count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+;Imported pterms FB3_1
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB3_3
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	!count<15> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	!count<16> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	!count<17> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9> & !count<18>;
+   count<13>.CLK = Clock;	// GCK
+   count<13>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 2 | 16 | count<14>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 46 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 13 | 2 | 7 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 15 | 2 | 6 | 1 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 6
+INPUTS | 15 | count<14>  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<12>  | count<13>  | count<5>  | count<9>  | count<7>  | EXP29_.EXP  | EXP30_.EXP  | Reset
+INPUTMC | 14 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 3 | 9 | 1 | 14 | 3 | 17 | 2 | 15 | 2 | 17
+INPUTP | 1 | 59
+IMPORTS | 2 | 2 | 15 | 2 | 17
+EQ | 44 | 
+   count<14>.T = count<14> & count<15> & count<16> & count<17> & 
+	count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+;Imported pterms FB3_16
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB3_18
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & !count<15> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & !count<16> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & !count<17> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9> & 
+	!count<18>;
+   count<14>.CLK = Clock;	// GCK
+   count<14>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 3 | 10 | count<15>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 31 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 6 | 1 | 11 | 3 | 8 | 2 | 17 | 3 | 16 | 2 | 7 | 1 | 14 | 0 | 1 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 7 | 1 | 12 | 1 | 15 | 2 | 2 | 2 | 5 | 2 | 14 | 3 | 3 | 3 | 4
+INPUTS | 20 | count<15>  | count<16>  | count<17>  | count<18>  | count<0>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<9>  | Reset
+INPUTMC | 19 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14
+INPUTP | 1 | 59
+EQ | 15 | 
+   count<15>.T = count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & !count<16> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & !count<17> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9> & !count<18>;
+   count<15>.CLK = Clock;	// GCK
+   count<15>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 2 | 13 | count<16>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 47 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 6 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 16 | 2 | 7 | 1 | 14 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 2 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 6 | 3 | 13 | 3 | 15
+INPUTS | 15 | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<5>  | count<9>  | count<7>  | count<17>.EXP  | EXP28_.EXP  | Reset
+INPUTMC | 14 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 9 | 1 | 14 | 3 | 17 | 2 | 12 | 2 | 14
+INPUTP | 1 | 59
+IMPORTS | 2 | 2 | 12 | 2 | 14
+EQ | 31 | 
+   count<16>.T = count<15> & count<16> & count<17> & count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+;Imported pterms FB3_13
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+;Imported pterms FB3_15
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<15> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9>;
+   count<16>.CLK = Clock;	// GCK
+   count<16>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 2 | 12 | count<17>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 46 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 6 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 16 | 2 | 7 | 1 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3 | 3 | 6 | 3 | 13 | 3 | 15
+INPUTS | 21 | count<0>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<15>  | count<16>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<9>  | count<17>  | count<18>  | Reset  | EXP27_.EXP
+INPUTMC | 20 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14 | 2 | 12 | 1 | 0 | 2 | 11
+INPUTP | 1 | 59
+EXPORTS | 1 | 2 | 13
+IMPORTS | 1 | 2 | 11
+EQ | 35 | 
+   count<17>.T = count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<15> & count<16> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+;Imported pterms FB3_12
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+;Imported pterms FB3_11
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>;
+   count<17>.CLK = Clock;	// GCK
+   count<17>.AR = !Reset;
+    count<17>.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 3 | 7 | count<1>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 36 | 1 | 15 | 2 | 3 | 3 | 5 | 1 | 7 | 1 | 4 | 2 | 0 | 2 | 15 | 3 | 10 | 2 | 10 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 13 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 6 | 1 | 10 | 1 | 11 | 1 | 16 | 2 | 2 | 2 | 5 | 2 | 6 | 2 | 14 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 8 | 3 | 16
+INPUTS | 13 | count<0>  | count<1>  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | EXP35_.EXP  | Reset
+INPUTMC | 12 | 2 | 4 | 3 | 7 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 6
+INPUTP | 1 | 59
+IMPORTS | 1 | 3 | 6
+EQ | 18 | 
+   !count<1>.D = count<0> & count<1>
+	# !count<0> & !count<1>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+;Imported pterms FB4_7
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<4> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>;
+   count<1>.CLK = Clock;	// GCK
+   count<1>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 3 | 14 | count<2>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 35 | 1 | 15 | 2 | 3 | 3 | 5 | 1 | 7 | 1 | 4 | 2 | 0 | 2 | 15 | 3 | 10 | 2 | 10 | 2 | 12 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 13 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 6 | 1 | 9 | 1 | 11 | 1 | 16 | 2 | 2 | 2 | 5 | 2 | 6 | 2 | 14 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 8 | 3 | 16
+INPUTS | 10 | count<0>  | count<2>  | count<1>  | count<15>  | count<16>  | count<17>  | count<18>  | EXP37_.EXP  | EXP38_.EXP  | Reset
+INPUTMC | 9 | 2 | 4 | 3 | 14 | 3 | 7 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 13 | 3 | 15
+INPUTP | 1 | 59
+IMPORTS | 2 | 3 | 13 | 3 | 15
+EQ | 20 | 
+   !count<2>.D = !count<0> & !count<2>
+	# !count<1> & !count<2>
+	# count<0> & count<1> & count<2>
+	# count<15> & count<16> & count<17> & count<18>
+;Imported pterms FB4_14
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+;Imported pterms FB4_16
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<4> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>;
+   count<2>.CLK = Clock;	// GCK
+   count<2>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 2 | 8 | count<3>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 32 | 1 | 15 | 2 | 3 | 3 | 5 | 1 | 7 | 1 | 4 | 1 | 16 | 2 | 14 | 3 | 10 | 2 | 10 | 2 | 12 | 2 | 8 | 1 | 11 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 13 | 0 | 2 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 6 | 1 | 9 | 1 | 12 | 2 | 2 | 2 | 5 | 2 | 6 | 2 | 17 | 3 | 3 | 3 | 4 | 3 | 8 | 3 | 16
+INPUTS | 7 | count<0>  | count<3>  | count<1>  | count<2>  | count<8>.EXP  | EXP25_.EXP  | Reset
+INPUTMC | 6 | 2 | 4 | 2 | 8 | 3 | 7 | 3 | 14 | 2 | 7 | 2 | 9
+INPUTP | 1 | 59
+IMPORTS | 2 | 2 | 7 | 2 | 9
+EQ | 21 | 
+   !count<3>.D = !count<0> & !count<3>
+	# !count<1> & !count<3>
+	# !count<2> & !count<3>
+	# count<0> & count<1> & count<2> & count<3>
+;Imported pterms FB3_8
+	# count<15> & count<16> & count<17> & count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+;Imported pterms FB3_10
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<4> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>;
+   count<3>.CLK = Clock;	// GCK
+   count<3>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 1 | 12 | count<4>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 39 | 1 | 15 | 2 | 3 | 3 | 5 | 1 | 8 | 1 | 5 | 2 | 0 | 2 | 15 | 3 | 10 | 2 | 10 | 2 | 12 | 3 | 6 | 3 | 4 | 2 | 6 | 1 | 12 | 3 | 8 | 3 | 1 | 3 | 16 | 2 | 7 | 1 | 13 | 0 | 2 | 0 | 0 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 9 | 1 | 10 | 1 | 11 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 9 | 2 | 14 | 2 | 17 | 3 | 3 | 3 | 15
+INPUTS | 13 | count<0>  | count<4>  | count<1>  | count<2>  | count<11>  | count<15>  | count<3>  | count<5>  | count<6>  | count<7>  | count<8>  | EXP16_.EXP  | Reset
+INPUTMC | 12 | 2 | 4 | 1 | 12 | 3 | 7 | 3 | 14 | 1 | 9 | 3 | 10 | 2 | 8 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 11
+INPUTP | 1 | 59
+EXPORTS | 1 | 1 | 13
+IMPORTS | 1 | 1 | 11
+EQ | 37 | 
+   !count<4>.D = !count<0> & !count<4>
+	# !count<1> & !count<4>
+	# !count<2> & !count<4>
+;Imported pterms FB2_12
+	# !count<3> & !count<4>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+;Imported pterms FB2_11
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB2_10
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>;
+   count<4>.CLK = Clock;	// GCK
+   count<4>.AR = !Reset;
+    count<4>.EXP  =  count<0> & !count<11> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 3 | 9 | count<5>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 37 | 1 | 15 | 2 | 4 | 3 | 5 | 1 | 8 | 1 | 5 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 6 | 3 | 8 | 2 | 6 | 1 | 11 | 3 | 9 | 2 | 17 | 3 | 16 | 2 | 7 | 1 | 14 | 0 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 12 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 9 | 2 | 11 | 2 | 14 | 3 | 3 | 3 | 4 | 3 | 15
+INPUTS | 7 | count<0>  | count<5>  | count<1>  | count<2>  | count<3>  | EXP36_.EXP  | Reset
+INPUTMC | 6 | 2 | 4 | 3 | 9 | 3 | 7 | 3 | 14 | 2 | 8 | 3 | 8
+INPUTP | 1 | 59
+IMPORTS | 1 | 3 | 8
+EQ | 15 | 
+   !count<5>.D = !count<0> & !count<5>
+	# !count<1> & !count<5>
+	# !count<2> & !count<5>
+	# !count<3> & !count<5>
+;Imported pterms FB4_9
+	# !count<4> & !count<5>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<9> & count<18>;
+   count<5>.CLK = Clock;	// GCK
+   count<5>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 3 | 2 | count<6>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 36 | 1 | 15 | 2 | 3 | 3 | 5 | 1 | 8 | 1 | 5 | 2 | 0 | 2 | 15 | 3 | 10 | 2 | 11 | 2 | 12 | 3 | 6 | 3 | 4 | 2 | 6 | 1 | 10 | 3 | 2 | 3 | 16 | 2 | 7 | 1 | 14 | 0 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 12 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 9 | 2 | 14 | 2 | 17 | 3 | 1 | 3 | 3 | 3 | 15
+INPUTS | 8 | count<0>  | count<6>  | count<1>  | count<2>  | count<3>  | EXP32_.EXP  | EXP33_.EXP  | Reset
+INPUTMC | 7 | 2 | 4 | 3 | 2 | 3 | 7 | 3 | 14 | 2 | 8 | 3 | 1 | 3 | 3
+INPUTP | 1 | 59
+IMPORTS | 2 | 3 | 1 | 3 | 3
+EQ | 17 | 
+   !count<6>.D = !count<0> & !count<6>
+	# !count<1> & !count<6>
+	# !count<2> & !count<6>
+	# !count<3> & !count<6>
+;Imported pterms FB4_2
+	# !count<4> & !count<6>
+;Imported pterms FB4_4
+	# !count<5> & !count<6>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<9> & count<18>;
+   count<6>.CLK = Clock;	// GCK
+   count<6>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 3 | 17 | count<7>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 35 | 1 | 15 | 2 | 4 | 3 | 5 | 1 | 8 | 1 | 5 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 6 | 3 | 4 | 2 | 6 | 1 | 10 | 3 | 17 | 2 | 7 | 1 | 14 | 0 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 12 | 1 | 13 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 5 | 2 | 9 | 2 | 11 | 2 | 14 | 2 | 17 | 3 | 15 | 3 | 16
+INPUTS | 8 | count<0>  | count<7>  | count<1>  | count<2>  | count<3>  | EXP31_.EXP  | EXP39_.EXP  | Reset
+INPUTMC | 7 | 2 | 4 | 3 | 17 | 3 | 7 | 3 | 14 | 2 | 8 | 3 | 0 | 3 | 16
+INPUTP | 1 | 59
+IMPORTS | 2 | 3 | 0 | 3 | 16
+EQ | 18 | 
+   !count<7>.D = !count<0> & !count<7>
+	# !count<1> & !count<7>
+	# !count<2> & !count<7>
+	# !count<3> & !count<7>
+;Imported pterms FB4_1
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<9> & count<18>
+;Imported pterms FB4_17
+	# !count<4> & !count<7>
+	# !count<5> & !count<7>
+	# !count<6> & !count<7>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7>;
+   count<7>.CLK = Clock;	// GCK
+   count<7>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 2 | 7 | count<8>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 31 | 1 | 15 | 2 | 3 | 3 | 5 | 1 | 8 | 1 | 5 | 2 | 0 | 2 | 15 | 3 | 10 | 2 | 11 | 2 | 12 | 3 | 6 | 3 | 4 | 2 | 6 | 1 | 10 | 2 | 7 | 1 | 13 | 0 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 12 | 1 | 16 | 1 | 17 | 2 | 2 | 2 | 9 | 2 | 14 | 2 | 17 | 3 | 15 | 2 | 8
+INPUTS | 20 | count<15>  | count<16>  | count<17>  | count<8>  | count<18>  | count<0>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | EXP24_.EXP  | Reset
+INPUTMC | 19 | 3 | 10 | 2 | 13 | 2 | 12 | 2 | 7 | 1 | 0 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 6
+INPUTP | 1 | 59
+EXPORTS | 1 | 2 | 8
+IMPORTS | 1 | 2 | 6
+EQ | 34 | 
+   count<8>.T = count<15> & count<16> & count<17> & count<8> & 
+	count<18>
+	# count<0> & !count<17> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7>
+;Imported pterms FB3_7
+	# count<0> & !count<16> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & !count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & !count<11> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+;Imported pterms FB3_6
+	# count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & !count<9>;
+   count<8>.CLK = Clock;	// GCK
+   count<8>.AR = !Reset;
+    count<8>.EXP  =  count<15> & count<16> & count<17> & count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 1 | 14 | count<9>
+ATTRIBUTES | 4358928 | 0
+OUTPUTMC | 42 | 1 | 15 | 2 | 4 | 3 | 5 | 1 | 8 | 1 | 5 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 6 | 3 | 4 | 2 | 5 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 15 | 2 | 6 | 1 | 14 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 6 | 1 | 7 | 1 | 9 | 1 | 10 | 1 | 13 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3
+INPUTS | 15 | count<15>  | count<16>  | count<17>  | count<9>  | count<18>  | count<11>  | count<12>  | count<13>  | count<14>  | count<5>  | count<7>  | count<6>  | EXP17_.EXP  | EXP18_.EXP  | Reset
+INPUTMC | 14 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 14 | 1 | 0 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 9 | 3 | 17 | 3 | 2 | 1 | 13 | 1 | 15
+INPUTP | 1 | 59
+IMPORTS | 2 | 1 | 13 | 1 | 15
+EQ | 54 | 
+   count<9>.T = count<15> & count<16> & count<17> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+;Imported pterms FB2_14
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<0> & !count<17> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	!count<18>
+;Imported pterms FB2_13
+	# count<0> & !count<11> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+;Imported pterms FB2_16
+	# count<0> & !count<16> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & !count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+;Imported pterms FB2_17
+	# count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>;
+   count<9>.CLK = Clock;	// GCK
+   count<9>.AR = !Reset;
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 1 | 0 | count<18>
+ATTRIBUTES | 8553232 | 0
+OUTPUTMC | 47 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 6 | 1 | 11 | 3 | 8 | 3 | 0 | 3 | 16 | 2 | 7 | 1 | 14 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 2 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 13 | 1 | 15 | 1 | 17 | 2 | 0 | 2 | 2 | 2 | 3 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 15 | 2 | 17 | 3 | 3 | 3 | 6 | 3 | 13 | 3 | 15
+INPUTS | 14 | count<16>  | count<18>  | count<11>  | count<12>  | count<13>  | count<14>  | count<17>  | count<1>  | count<4>  | count<9>  | count<2>  | count<3>  | EXP8_.EXP  | Reset
+INPUTMC | 13 | 2 | 13 | 1 | 0 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 12 | 3 | 7 | 1 | 12 | 1 | 14 | 3 | 14 | 2 | 8 | 1 | 1
+INPUTP | 1 | 59
+EXPORTS | 1 | 1 | 17
+IMPORTS | 1 | 1 | 1
+EQ | 29 | 
+   count<18>.D = !count<16> & count<18>
+;Imported pterms FB2_2
+	# !count<17> & count<18>
+	# !count<11> & !count<15> & count<18>
+	# !count<12> & !count<15> & count<18>
+	# !count<13> & !count<15> & count<18>
+	# !count<14> & !count<15> & count<18>
+;Imported pterms FB2_3
+	# !count<10> & !count<15> & !count<9> & count<18>
+	# !count<10> & !count<15> & !count<4> & !count<5> & 
+	!count<6> & !count<7> & !count<8> & count<18>
+	# !count<0> & !count<10> & !count<15> & !count<1> & 
+	!count<2> & !count<3> & !count<5> & !count<6> & !count<7> & 
+	!count<8> & count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<15> & count<16> & count<17> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9> & !count<18>;
+   count<18>.CLK = Clock;	// GCK
+   count<18>.AR = !Reset;
+    count<18>.EXP  =  Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<1> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<2> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<3> & count<4> & 
+	count<9> & count<18>
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 0 | 1 | led2_OBUF
+ATTRIBUTES | 8684294 | 0
+INPUTS | 16 | led1  | Reset  | count<15>  | count<16>  | count<17>  | count<18>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<5>  | count<9>  | count<6>  | EXP6_.EXP  | EXP7_.EXP
+INPUTMC | 15 | 1 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 9 | 1 | 14 | 3 | 2 | 0 | 0 | 0 | 2
+INPUTP | 1 | 59
+IMPORTS | 2 | 0 | 0 | 0 | 2
+EQ | 32 | 
+   !led2.D = led1
+	$ Reset & count<15> & count<16> & count<17> & 
+	count<18>
+	# Reset & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<16> & count<17> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<5> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<6> & count<9> & 
+	count<18>
+;Imported pterms FB1_1
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<7> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<9> & 
+	count<18>
+	# Reset & count<0> & count<11> & count<12> & 
+	count<13> & count<14> & count<16> & count<17> & count<4> & 
+	count<9> & count<18>
+;Imported pterms FB1_3
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<1> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<2> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<3> & count<4> & 
+	count<9> & count<18>;
+   led2.CLK = Clock;	// GCK
+GLOBALS | 1 | 2 | Clock
+
+MACROCELL | 0 | 0 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 13 | Reset  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<7>  | count<9>  | count<18>  | count<8>  | count<0>  | count<4>
+INPUTMC | 12 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 17 | 1 | 14 | 1 | 0 | 2 | 7 | 2 | 4 | 1 | 12
+INPUTP | 1 | 59
+EXPORTS | 1 | 0 | 1
+EQ | 9 | 
+       EXP6_.EXP  =  Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<7> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<9> & 
+	count<18>
+	# Reset & count<0> & count<11> & count<12> & 
+	count<13> & count<14> & count<16> & count<17> & count<4> & 
+	count<9> & count<18>
+
+MACROCELL | 0 | 2 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 13 | Reset  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<1>  | count<4>  | count<9>  | count<18>  | count<2>  | count<3>
+INPUTMC | 12 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 7 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 14 | 2 | 8
+INPUTP | 1 | 59
+EXPORTS | 1 | 0 | 1
+EQ | 9 | 
+       EXP7_.EXP  =  Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<1> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<2> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<3> & count<4> & 
+	count<9> & count<18>
+
+MACROCELL | 1 | 1 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 0
+INPUTS | 8 | count<17>  | count<18>  | count<11>  | count<15>  | count<12>  | count<13>  | count<14>  | EXP9_.EXP
+INPUTMC | 8 | 2 | 12 | 1 | 0 | 1 | 9 | 3 | 10 | 1 | 6 | 2 | 1 | 2 | 16 | 1 | 2
+EXPORTS | 1 | 1 | 0
+IMPORTS | 1 | 1 | 2
+EQ | 16 | 
+       EXP8_.EXP  =  !count<17> & count<18>
+	# !count<11> & !count<15> & count<18>
+	# !count<12> & !count<15> & count<18>
+	# !count<13> & !count<15> & count<18>
+	# !count<14> & !count<15> & count<18>
+;Imported pterms FB2_3
+	# !count<10> & !count<15> & !count<9> & count<18>
+	# !count<10> & !count<15> & !count<4> & !count<5> & 
+	!count<6> & !count<7> & !count<8> & count<18>
+	# !count<0> & !count<10> & !count<15> & !count<1> & 
+	!count<2> & !count<3> & !count<5> & !count<6> & !count<7> & 
+	!count<8> & count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<15> & count<16> & count<17> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9> & !count<18>
+
+MACROCELL | 1 | 2 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 19 | count<10>  | count<15>  | count<9>  | count<18>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<0>  | count<1>  | count<2>  | count<3>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>
+INPUTMC | 19 | 3 | 5 | 3 | 10 | 1 | 14 | 1 | 0 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12
+EXPORTS | 1 | 1 | 1
+EQ | 10 | 
+       EXP9_.EXP  =  !count<10> & !count<15> & !count<9> & count<18>
+	# !count<10> & !count<15> & !count<4> & !count<5> & 
+	!count<6> & !count<7> & !count<8> & count<18>
+	# !count<0> & !count<10> & !count<15> & !count<1> & 
+	!count<2> & !count<3> & !count<5> & !count<6> & !count<7> & 
+	!count<8> & count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<15> & count<16> & count<17> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9> & !count<18>
+
+MACROCELL | 1 | 3 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 14 | count<0>  | count<10>  | count<11>  | count<16>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<9>  | count<18>
+INPUTMC | 14 | 2 | 4 | 3 | 5 | 1 | 9 | 2 | 13 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14 | 1 | 0
+EXPORTS | 1 | 1 | 4
+EQ | 6 | 
+       EXP10_.EXP  =  count<0> & count<10> & count<11> & !count<16> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9> & !count<18>
+
+MACROCELL | 1 | 4 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 5
+INPUTS | 20 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<1>  | count<4>  | count<9>  | count<18>  | count<2>  | count<3>  | count<0>  | count<10>  | count<15>  | count<5>  | count<6>  | count<7>  | count<8>  | EXP10_.EXP
+INPUTMC | 20 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 7 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 14 | 2 | 8 | 2 | 4 | 3 | 5 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 3
+EXPORTS | 1 | 1 | 5
+IMPORTS | 1 | 1 | 3
+EQ | 22 | 
+       EXP11_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & !count<15> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & !count<17> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+;Imported pterms FB2_4
+	# count<0> & count<10> & count<11> & !count<16> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9> & !count<18>
+
+MACROCELL | 1 | 5 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 15 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<5>  | count<9>  | count<18>  | count<6>  | count<7>  | count<8>  | count<0>  | count<4>  | EXP11_.EXP
+INPUTMC | 15 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 9 | 1 | 14 | 1 | 0 | 3 | 2 | 3 | 17 | 2 | 7 | 2 | 4 | 1 | 12 | 1 | 4
+EXPORTS | 1 | 1 | 6
+IMPORTS | 1 | 1 | 4
+EQ | 34 | 
+       EXP12_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB2_5
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & !count<15> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & !count<17> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+;Imported pterms FB2_4
+	# count<0> & count<10> & count<11> & !count<16> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9> & !count<18>
+
+MACROCELL | 1 | 7 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 8
+INPUTS | 20 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<1>  | count<4>  | count<9>  | count<18>  | count<2>  | count<3>  | count<0>  | count<10>  | count<15>  | count<5>  | count<6>  | count<7>  | count<8>  | count<12>.EXP
+INPUTMC | 20 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 7 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 14 | 2 | 8 | 2 | 4 | 3 | 5 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 6
+EXPORTS | 1 | 1 | 8
+IMPORTS | 1 | 1 | 6
+EQ | 22 | 
+       EXP13_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & count<10> & !count<17> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+;Imported pterms FB2_7
+	# count<0> & count<10> & !count<16> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9> & !count<18>
+
+MACROCELL | 1 | 8 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 9
+INPUTS | 15 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<5>  | count<9>  | count<18>  | count<6>  | count<7>  | count<8>  | count<0>  | count<4>  | EXP13_.EXP
+INPUTMC | 15 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 9 | 1 | 14 | 1 | 0 | 3 | 2 | 3 | 17 | 2 | 7 | 2 | 4 | 1 | 12 | 1 | 7
+EXPORTS | 1 | 1 | 9
+IMPORTS | 1 | 1 | 7
+EQ | 34 | 
+       EXP14_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB2_8
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & count<10> & !count<17> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+;Imported pterms FB2_7
+	# count<0> & count<10> & !count<16> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9> & !count<18>
+
+MACROCELL | 1 | 10 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 15 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<6>  | count<9>  | count<18>  | count<7>  | count<8>  | count<0>  | count<4>  | count<1>  | count<11>.EXP
+INPUTMC | 15 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 2 | 1 | 14 | 1 | 0 | 3 | 17 | 2 | 7 | 2 | 4 | 1 | 12 | 3 | 7 | 1 | 9
+EXPORTS | 1 | 1 | 11
+IMPORTS | 1 | 1 | 9
+EQ | 19 | 
+       EXP15_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB2_10
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+
+MACROCELL | 1 | 11 | EXP16_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 12
+INPUTS | 17 | count<3>  | count<4>  | count<15>  | count<16>  | count<17>  | count<18>  | count<0>  | count<1>  | count<2>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<5>  | count<9>  | EXP15_.EXP
+INPUTMC | 17 | 2 | 8 | 1 | 12 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 2 | 4 | 3 | 7 | 3 | 14 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 9 | 1 | 14 | 1 | 10
+EXPORTS | 1 | 1 | 12
+IMPORTS | 1 | 1 | 10
+EQ | 28 | 
+       EXP16_.EXP  =  !count<3> & !count<4>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+;Imported pterms FB2_11
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+;Imported pterms FB2_10
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+
+MACROCELL | 1 | 13 | EXP17_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 19 | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<9>  | count<18>  | count<8>  | count<0>  | count<4>  | count<1>  | count<2>  | count<3>  | count<5>  | count<6>  | count<7>  | count<4>.EXP
+INPUTMC | 19 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 14 | 1 | 0 | 2 | 7 | 2 | 4 | 1 | 12 | 3 | 7 | 3 | 14 | 2 | 8 | 3 | 9 | 3 | 2 | 3 | 17 | 1 | 12
+EXPORTS | 1 | 1 | 14
+IMPORTS | 1 | 1 | 12
+EQ | 17 | 
+       EXP17_.EXP  =  count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<0> & !count<17> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	!count<18>
+;Imported pterms FB2_13
+	# count<0> & !count<11> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+
+MACROCELL | 1 | 15 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 20 | count<0>  | count<16>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<11>  | count<12>  | count<13>  | count<14>  | count<17>  | count<9>  | count<18>  | count<10>  | count<15>  | togl.EXP
+INPUTMC | 20 | 2 | 4 | 2 | 13 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 12 | 1 | 14 | 1 | 0 | 3 | 5 | 3 | 10 | 1 | 16
+EXPORTS | 1 | 1 | 14
+IMPORTS | 1 | 1 | 16
+EQ | 25 | 
+       EXP18_.EXP  =  count<0> & !count<16> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & !count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+;Imported pterms FB2_17
+	# count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8>
+
+MACROCELL | 1 | 17 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 16 | Reset  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<5>  | count<9>  | count<18>  | count<6>  | count<7>  | count<8>  | count<0>  | count<4>  | count<18>.EXP
+INPUTMC | 15 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 9 | 1 | 14 | 1 | 0 | 3 | 2 | 3 | 17 | 2 | 7 | 2 | 4 | 1 | 12 | 1 | 0
+INPUTP | 1 | 59
+EXPORTS | 1 | 1 | 16
+IMPORTS | 1 | 1 | 0
+EQ | 25 | 
+       EXP19_.EXP  =  Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<5> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<6> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<7> & count<9> & 
+	count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<9> & 
+	count<18>
+	# Reset & count<0> & count<11> & count<12> & 
+	count<13> & count<14> & count<16> & count<17> & count<4> & 
+	count<9> & count<18>
+;Imported pterms FB2_1
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<1> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<2> & count<4> & 
+	count<9> & count<18>
+	# Reset & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<3> & count<4> & 
+	count<9> & count<18>
+
+MACROCELL | 2 | 0 | EXP20_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 14 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<6>  | count<9>  | count<18>  | count<8>  | count<0>  | count<4>  | count<1>  | count<2>
+INPUTMC | 14 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 2 | 1 | 14 | 1 | 0 | 2 | 7 | 2 | 4 | 1 | 12 | 3 | 7 | 3 | 14
+EXPORTS | 1 | 2 | 1
+EQ | 13 | 
+       EXP20_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+
+MACROCELL | 2 | 2 | EXP21_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 19 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<3>  | count<4>  | count<9>  | count<18>  | count<0>  | count<10>  | count<15>  | count<1>  | count<2>  | count<5>  | count<6>  | count<7>  | count<8>
+INPUTMC | 19 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 2 | 8 | 1 | 12 | 1 | 14 | 1 | 0 | 2 | 4 | 3 | 5 | 3 | 10 | 3 | 7 | 3 | 14 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7
+EXPORTS | 1 | 2 | 1
+EQ | 15 | 
+       EXP21_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	!count<15> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	!count<16> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	!count<17> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<1> & count<2> & count<3> & count<4> & count<5> & 
+	count<6> & count<7> & count<8> & count<9> & !count<18>
+
+MACROCELL | 2 | 3 | EXP22_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 15 | count<0>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<6>  | count<9>  | count<18>  | count<8>  | count<1>  | count<4>  | count<2>  | count<3>
+INPUTMC | 15 | 2 | 4 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 2 | 1 | 14 | 1 | 0 | 2 | 7 | 3 | 7 | 1 | 12 | 3 | 14 | 2 | 8
+EXPORTS | 1 | 2 | 4
+EQ | 15 | 
+       EXP22_.EXP  =  !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<6> & count<9> & 
+	count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<9> & 
+	count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<1> & count<4> & 
+	count<9> & count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<2> & count<4> & 
+	count<9> & count<18>
+	# !count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<3> & count<4> & 
+	count<9> & count<18>
+
+MACROCELL | 2 | 5 | EXP23_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 6
+INPUTS | 14 | count<0>  | count<12>  | count<15>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<13>  | count<14>  | count<10>  | count<9>
+INPUTMC | 14 | 2 | 4 | 1 | 6 | 3 | 10 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 1 | 2 | 16 | 3 | 5 | 1 | 14
+EXPORTS | 1 | 2 | 6
+EQ | 12 | 
+       EXP23_.EXP  =  count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & !count<9>
+
+MACROCELL | 2 | 6 | EXP24_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 7
+INPUTS | 20 | count<0>  | count<16>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<18>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<17>  | count<8>  | count<9>  | count<15>  | EXP23_.EXP
+INPUTMC | 20 | 2 | 4 | 2 | 13 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 1 | 0 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 12 | 2 | 7 | 1 | 14 | 3 | 10 | 2 | 5
+EXPORTS | 1 | 2 | 7
+IMPORTS | 1 | 2 | 5
+EQ | 24 | 
+       EXP24_.EXP  =  count<0> & !count<16> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & !count<18>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<8> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & !count<11> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+;Imported pterms FB3_6
+	# count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7>
+	# count<0> & !count<10> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & !count<9>
+
+MACROCELL | 2 | 9 | EXP25_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 8
+INPUTS | 13 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<4>  | count<9>  | count<18>  | count<5>  | count<6>  | count<7>  | count<8>
+INPUTMC | 13 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7
+EXPORTS | 1 | 2 | 8
+EQ | 10 | 
+       EXP25_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<4> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+
+MACROCELL | 2 | 10 | EXP26_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 11
+INPUTS | 13 | count<0>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<4>  | count<9>  | count<18>  | count<1>  | count<2>  | count<3>
+INPUTMC | 13 | 2 | 4 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 7 | 3 | 14 | 2 | 8
+EXPORTS | 1 | 2 | 11
+EQ | 12 | 
+       EXP26_.EXP  =  count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+
+MACROCELL | 2 | 11 | EXP27_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 12
+INPUTS | 14 | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<18>  | count<5>  | count<9>  | count<6>  | count<7>  | count<8>  | EXP26_.EXP
+INPUTMC | 14 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 0 | 3 | 9 | 1 | 14 | 3 | 2 | 3 | 17 | 2 | 7 | 2 | 10
+EXPORTS | 1 | 2 | 12
+IMPORTS | 1 | 2 | 10
+EQ | 23 | 
+       EXP27_.EXP  =  count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+;Imported pterms FB3_11
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+
+MACROCELL | 2 | 14 | EXP28_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 13
+INPUTS | 19 | count<0>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<4>  | count<9>  | count<18>  | count<1>  | count<2>  | count<3>  | count<10>  | count<15>  | count<5>  | count<6>  | count<7>  | count<8>
+INPUTMC | 19 | 2 | 4 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 7 | 3 | 14 | 2 | 8 | 3 | 5 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7
+EXPORTS | 1 | 2 | 13
+EQ | 16 | 
+       EXP28_.EXP  =  count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<14> & count<15> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9>
+
+MACROCELL | 2 | 15 | EXP29_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 16
+INPUTS | 14 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<6>  | count<9>  | count<18>  | count<8>  | count<0>  | count<4>  | count<1>  | count<2>
+INPUTMC | 14 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 3 | 2 | 1 | 14 | 1 | 0 | 2 | 7 | 2 | 4 | 1 | 12 | 3 | 7 | 3 | 14
+EXPORTS | 1 | 2 | 16
+EQ | 13 | 
+       EXP29_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+	# count<0> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<1> & count<4> & count<9> & 
+	count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<2> & count<4> & count<9> & 
+	count<18>
+
+MACROCELL | 2 | 17 | EXP30_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 16
+INPUTS | 19 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<3>  | count<4>  | count<9>  | count<18>  | count<0>  | count<10>  | count<15>  | count<1>  | count<2>  | count<5>  | count<6>  | count<7>  | count<8>
+INPUTMC | 19 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 2 | 8 | 1 | 12 | 1 | 14 | 1 | 0 | 2 | 4 | 3 | 5 | 3 | 10 | 3 | 7 | 3 | 14 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7
+EXPORTS | 1 | 2 | 16
+EQ | 19 | 
+       EXP30_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<3> & count<4> & count<9> & 
+	count<18>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & !count<15> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & !count<16> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & !count<17> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7> & count<8> & 
+	count<9>
+	# count<0> & count<10> & count<11> & count<12> & 
+	count<13> & count<1> & count<2> & count<3> & count<4> & 
+	count<5> & count<6> & count<7> & count<8> & count<9> & 
+	!count<18>
+
+MACROCELL | 3 | 0 | EXP31_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 17
+INPUTS | 9 | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<18>  | count<9>
+INPUTMC | 9 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 0 | 1 | 14
+EXPORTS | 1 | 3 | 17
+EQ | 4 | 
+       EXP31_.EXP  =  count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<9> & count<18>
+
+MACROCELL | 3 | 1 | EXP32_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 2
+INPUTS | 2 | count<4>  | count<6>
+INPUTMC | 2 | 1 | 12 | 3 | 2
+EXPORTS | 1 | 3 | 2
+EQ | 1 | 
+       EXP32_.EXP  =  !count<4> & !count<6>
+
+MACROCELL | 3 | 3 | EXP33_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 2
+INPUTS | 17 | count<5>  | count<6>  | count<15>  | count<16>  | count<17>  | count<18>  | count<0>  | count<1>  | count<2>  | count<3>  | count<4>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<9>
+INPUTMC | 17 | 3 | 9 | 3 | 2 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 1 | 14
+EXPORTS | 1 | 3 | 2
+EQ | 8 | 
+       EXP33_.EXP  =  !count<5> & !count<6>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<9> & count<18>
+
+MACROCELL | 3 | 4 | EXP34_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 5
+INPUTS | 16 | count<0>  | count<16>  | count<1>  | count<2>  | count<3>  | count<4>  | count<5>  | count<6>  | count<7>  | count<8>  | count<9>  | count<11>  | count<15>  | count<12>  | count<13>  | count<14>
+INPUTMC | 16 | 2 | 4 | 2 | 13 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14 | 1 | 9 | 3 | 10 | 1 | 6 | 2 | 1 | 2 | 16
+EXPORTS | 1 | 3 | 5
+EQ | 15 | 
+       EXP34_.EXP  =  count<0> & !count<16> & count<1> & count<2> & 
+	count<3> & count<4> & count<5> & count<6> & count<7> & 
+	count<8> & count<9>
+	# count<0> & !count<11> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & !count<12> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & !count<13> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+	# count<0> & !count<14> & !count<15> & count<1> & 
+	count<2> & count<3> & count<4> & count<5> & count<6> & 
+	count<7> & count<8> & count<9>
+
+MACROCELL | 3 | 6 | EXP35_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 7
+INPUTS | 13 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<4>  | count<9>  | count<18>  | count<5>  | count<6>  | count<7>  | count<8>
+INPUTMC | 13 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7
+EXPORTS | 1 | 3 | 7
+EQ | 10 | 
+       EXP35_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<4> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+
+MACROCELL | 3 | 8 | EXP36_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 9
+INPUTS | 16 | count<4>  | count<5>  | count<15>  | count<16>  | count<17>  | count<18>  | count<0>  | count<1>  | count<2>  | count<3>  | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<9>
+INPUTMC | 16 | 1 | 12 | 3 | 9 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 1 | 14
+EXPORTS | 1 | 3 | 9
+EQ | 8 | 
+       EXP36_.EXP  =  !count<4> & !count<5>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5>
+	# count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<9> & count<18>
+
+MACROCELL | 3 | 13 | EXP37_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 14
+INPUTS | 8 | count<10>  | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<18>
+INPUTMC | 8 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 0
+EXPORTS | 1 | 3 | 14
+EQ | 2 | 
+       EXP37_.EXP  =  count<10> & count<11> & count<12> & count<13> & 
+	count<14> & count<16> & count<17> & count<18>
+
+MACROCELL | 3 | 15 | EXP38_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 14
+INPUTS | 13 | count<11>  | count<12>  | count<13>  | count<14>  | count<16>  | count<17>  | count<4>  | count<9>  | count<18>  | count<5>  | count<6>  | count<7>  | count<8>
+INPUTMC | 13 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 2 | 13 | 2 | 12 | 1 | 12 | 1 | 14 | 1 | 0 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7
+EXPORTS | 1 | 3 | 14
+EQ | 10 | 
+       EXP38_.EXP  =  count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<4> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<5> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<6> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<7> & count<9> & count<18>
+	# count<11> & count<12> & count<13> & count<14> & 
+	count<16> & count<17> & count<8> & count<9> & count<18>
+
+MACROCELL | 3 | 16 | EXP39_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 17
+INPUTS | 12 | count<4>  | count<7>  | count<5>  | count<6>  | count<15>  | count<16>  | count<17>  | count<18>  | count<0>  | count<1>  | count<2>  | count<3>
+INPUTMC | 12 | 1 | 12 | 3 | 17 | 3 | 9 | 3 | 2 | 3 | 10 | 2 | 13 | 2 | 12 | 1 | 0 | 2 | 4 | 3 | 7 | 3 | 14 | 2 | 8
+EXPORTS | 1 | 3 | 17
+EQ | 6 | 
+       EXP39_.EXP  =  !count<4> & !count<7>
+	# !count<5> & !count<7>
+	# !count<6> & !count<7>
+	# count<15> & count<16> & count<17> & count<18>
+	# count<0> & count<1> & count<2> & count<3> & 
+	count<4> & count<5> & count<6> & count<7>
+
+PIN | Clock | 16384 | 0 | N/A | 24 | 21 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14 | 1 | 0 | 0 | 1
+PIN | Reset | 64 | 0 | N/A | 59 | 24 | 1 | 16 | 2 | 4 | 3 | 5 | 1 | 9 | 1 | 6 | 2 | 1 | 2 | 16 | 3 | 10 | 2 | 13 | 2 | 12 | 3 | 7 | 3 | 14 | 2 | 8 | 1 | 12 | 3 | 9 | 3 | 2 | 3 | 17 | 2 | 7 | 1 | 14 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 2 | 1 | 17
+PIN | led1 | 536871040 | 0 | N/A | 10
+PIN | led2 | 536871040 | 0 | N/A | 11

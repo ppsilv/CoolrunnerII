@@ -1,0 +1,30 @@
+Pin Freeze File:  version P.20131013
+
+9572XL44VQ XC9572XL-10-VQ44
+Clock S:PIN1
+Reset S:PIN18
+led2 S:PIN39
+led1 S:PIN38
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 EXP6_ led2_OBUF EXP7_
+
+PARTITION FB2_1 count<18> EXP8_ EXP9_ EXP10_
+		 EXP11_ EXP12_ count<12> EXP13_
+		 EXP14_ count<11> EXP15_ EXP16_
+		 count<4> EXP17_ count<9> EXP18_
+		 togl EXP19_
+PARTITION FB3_1 EXP20_ count<13> EXP21_ EXP22_
+		 count<0> EXP23_ EXP24_ count<8>
+		 count<3> EXP25_ EXP26_ EXP27_
+		 count<17> count<16> EXP28_ EXP29_
+		 count<14> EXP30_
+PARTITION FB4_1 EXP31_ EXP32_ count<6> EXP33_
+		 EXP34_ count<10> EXP35_ count<1>
+		 EXP36_ count<5> count<15>
+PARTITION FB4_14 EXP37_ count<2> EXP38_ EXP39_
+		 count<7>
+

@@ -1,0 +1,134 @@
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+taengine -intstyle ise -f blink -w --format html1 -l blink_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-PC44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-VQ44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-VQ44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-VQ44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/Blink/blink.xst" -ofn "/home/pdsilva/tmp/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-VQ44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 

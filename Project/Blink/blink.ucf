@@ -1,0 +1,8 @@
+
+NET "clock" LOC = "P1";
+Net Clock TNM_NET = Clock;
+
+NET "Reset" LOC = "P18";
+
+NET "led1" LOC = "P38";
+NET "led2" LOC = "P39";
