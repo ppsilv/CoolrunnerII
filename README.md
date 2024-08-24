@@ -45,14 +45,14 @@ In the Tools tab of ISE 14.7, run iMPACT
       the recorder on the parallel port that we are not using. * Now click on the xc8572xl icon and the menu should appear in the iMPACT Processes box, including 
       the PROGRAM option.
 * Program the chip by clicking on the Program option.
-* Done, if everything went well, you will see the following text in the console:
-** '1': Erasing device...
-** '1': Erasure completed successfully.
-'1': Programming device...
-done.
-'1': Putting device in ISP mode...done.
-'1': Putting device in ISP mode...done.
-'1': Programming completed successfully.
-PROGRESS_END - End Operation.
-Elapsed time = 3 sec.
+Done, if everything went well, you will see the following text in the console:
+* '1': Erasing device...
+* '1': Erasure completed successfully.
+* '1': Programming device...
+* done.
+* '1': Putting device in ISP mode...done.
+* '1': Putting device in ISP mode...done.
+* '1': Programming completed successfully.
+* PROGRESS_END - End Operation.
+* Elapsed time = 3 sec.
 and the LED on the inverter port should be on and when the button is pressed, it goes out and the LED on the non-inverter port should light up.
