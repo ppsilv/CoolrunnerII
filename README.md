@@ -38,14 +38,11 @@ Installation:
 4.2 - In the Process tab of ISE 14.7, use the menu item Implement Top Module.
 
 4.3 - In the Tools tab of ISE 14.7, run iMPACT:
-    * A Warning window will appear, click OK
-    
+
+    * A Warning window will appear, click OK   
     * In the Edit tab of Impact, run the Launch Wizard
-    
     * In the Welcome to iMPACT window that opens, click OK
-    
     * In the Auto assign Configuration Files Query Dialo, click YES
-    
     * In the Assign New Configuration Files window, look for CPLDIntro3LEDInverse.jed, which was created within the Schematic-CPLDIntro3LEDinverse project when you executed item 4.2.
     
     * In the Device Programming Properties window that opens, click OK
