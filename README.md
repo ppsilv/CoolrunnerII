@@ -37,7 +37,7 @@ Installation:
 
 4.2 - In the Process tab of ISE 14.7, use the menu item Implement Top Module.
 
-4.3 - In the Tools tab of ISE 14.7, run iMPACT.
+4.3 - In the Tools tab of ISE 14.7, run iMPACT:
     * A Warning window will appear, click OK
     
     * In the Edit tab of Impact, run the Launch Wizard
