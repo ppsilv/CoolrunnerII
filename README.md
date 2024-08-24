@@ -18,8 +18,8 @@ Note: The board is called Coolrunner II because of the XC2C256 chip, which is th
      ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 /usr/lib/x86_64-linux-gnu/libncurses.so.5, after that it installed without any problem.
 
 # Xilinx ISE 14.7 method 2
-* Use the virtual machine that comes inside the Xilinx_ISE_DS_Lin_14.7_1015_1.tar file
-      Note: Even using the virtual machine I had to install the ISE that is in this file, because the drivers for the cable are inside its directory, there                 must be a way to just install the drivers for the cable without installing the ISE, but I didn't look for this option.
+* Use the virtual machine that comes inside the file to install ISE for windows 10 and windows 11
+      Note: Even using the virtual machine I had to install the ISE that is in this file, because the drivers for the cable are inside its directory, there must be a way to just install the drivers for the cable without installing the ISE, but I didn't look for this option.
 
 # Installing drivers for the Model DLC9LP cable
 * Run the script /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/digilent/install_digilent.sh
