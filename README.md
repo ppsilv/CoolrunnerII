@@ -8,9 +8,13 @@ Note: The board is called Coolrunner II because of the XC2C256 chip, which is th
 Requirements:
 Installation:
 1 - Xilinx ISE 14.7 method 1
+
     1.1 - Recorded JTAG Model DLC9LP (I used a clone Made in P.R.C and it worked)
+    
     1.2 - Digilent XC2-XL PB299929 Rev. B board
+    
     1.3 - ISE Release Version 14.7 Version P.20131013
+    
         The Xilinx_ISE_DS_Lin_14.7_1015_1.tar file to install on Linux is at: smb://orange01.local/opensoftware/Documentos/0000_Eletronica/Xilinx
         During installation, the ./xsetup program complained about the lack of lib
         libncurses.so.5 on Ubuntu 24.04 LTS, I had to do the following:
