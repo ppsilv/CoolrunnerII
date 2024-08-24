@@ -55,7 +55,6 @@ Obs.: Mesmo usando a máquina virtual eu tive que instalar o ISE que está nesse
           e o led na porta inversora deve estar aceso e quando pressionado o botão ele apaga e o led da porta não inversora deve acender.
 
 
-
-
+Pelos testes que fiz, voce abre o impact pelo ISE 14.7 e grava seu .jed file, se voce for fazer diversos testes com o código experimentando diversas tecnicas voce pode simplesmente minimizar o impact entre elas e toda vez que voce compilar um novo .jed é só buscar a instância anterior que voce usou para gravar e clicar em Program novamente ele vai perguntar se voce quer recarregar o novo .jed. 
 
 
