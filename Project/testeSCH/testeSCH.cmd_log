@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "/home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.xst" -ofn "/home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc testeSCH.ucf -p xc9572xl-VQ44-10 testeSCH.ngc testeSCH.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper testeSCH.ngd 
+XSLTProcess testeSCH_build.xml 
+tsim -intstyle ise testeSCH testeSCH.nga 
+taengine -intstyle ise -f testeSCH -w --format html1 -l testeSCH_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n testeSCH -i testeSCH 
+ngdbuild -intstyle ise -dd _ngo -uc testeSCH.ucf -p xc9572xl-VQ44-10 testeSCH.ngc testeSCH.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper testeSCH.ngd 
+XSLTProcess testeSCH_build.xml 
+tsim -intstyle ise testeSCH testeSCH.nga 
+hprep6 -s IEEE1149 -n testeSCH -i testeSCH 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.xst" -ofn "/home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc testeSCH.ucf -p xc9572xl-VQ44-10 testeSCH.ngc testeSCH.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper testeSCH.ngd 
+XSLTProcess testeSCH_build.xml 
+tsim -intstyle ise testeSCH testeSCH.nga 
+hprep6 -s IEEE1149 -n testeSCH -i testeSCH 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.xst" -ofn "/home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc testeSCH.ucf -p xc9572xl-VQ44-10 testeSCH.ngc testeSCH.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper testeSCH.ngd 
+XSLTProcess testeSCH_build.xml 
+tsim -intstyle ise testeSCH testeSCH.nga 
+hprep6 -s IEEE1149 -n testeSCH -i testeSCH 

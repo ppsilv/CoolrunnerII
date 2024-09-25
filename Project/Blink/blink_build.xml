@@ -5,7 +5,7 @@
 <design name='blink'/>
 <rptdir name='blink'/>
 <xilinx path='/opt/Xilinx/14.7/ISE_DS/ISE:'/>
-<projDir path='/home/pdsilva/tmp/Blink'/>
+<projDir path='/home/pdsilva/tmp/CoolrunnerII/Project/Blink'/>
 <xslDir path='chipviewer/data/xsl'/>
 <fileDir path='/chipviewer/data/html'/>
 <dataFile file='index.htm'/>

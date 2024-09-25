@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : testeSCH.vf
+// /___/   /\     Timestamp : 09/25/2024 20:35:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500xl -verilog /home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.vf -w /home/pdsilva/tmp/CoolrunnerII/Project/testeSCH/testeSCH.sch
+//Design Name: testeSCH
+//Device: xc9500xl
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module testeSCH(key1, 
+                key2, 
+                LED1, 
+                LED2);
+
+    input key1;
+    input key2;
+   output LED1;
+   output LED2;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   BUF  XLXI_1 (.I(key1), 
+               .O(XLXN_2));
+   BUF  XLXI_2 (.I(key2), 
+               .O(XLXN_1));
+   INV  XLXI_3 (.I(XLXN_1), 
+               .O(LED1));
+   INV  XLXI_4 (.I(XLXN_2), 
+               .O(LED2));
+endmodule

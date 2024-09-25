@@ -62,15 +62,16 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1724526912" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1724526912">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1724526912" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1273650113756999597" xil_pn:start_ts="1724526912">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1724530864" xil_pn:in_ck="142570874137792" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-9090741290067880202" xil_pn:start_ts="1724530859">
+    <transform xil_pn:end_ts="1727305000" xil_pn:in_ck="142570874137792" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="630958985452069962" xil_pn:start_ts="1727304996">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="blink.lso"/>
       <outfile xil_pn:name="blink.ngc"/>
@@ -87,23 +88,19 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1724530867" xil_pn:in_ck="-2917133547933140174" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="920057667651985957" xil_pn:start_ts="1724530864">
+    <transform xil_pn:end_ts="1727305004" xil_pn:in_ck="-2917133547933140174" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-736101761533034375" xil_pn:start_ts="1727305000">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="blink.bld"/>
       <outfile xil_pn:name="blink.ngd"/>
       <outfile xil_pn:name="blink_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1724530871" xil_pn:in_ck="142570874129047" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="-6033860560436861298" xil_pn:start_ts="1724530867">
+    <transform xil_pn:end_ts="1727305008" xil_pn:in_ck="142570874129047" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="8708115786231031138" xil_pn:start_ts="1727305004">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="blink.gyd"/>
       <outfile xil_pn:name="blink.mfd"/>
       <outfile xil_pn:name="blink.nga"/>
@@ -118,25 +115,20 @@
       <outfile xil_pn:name="blink_html"/>
       <outfile xil_pn:name="blink_pad.csv"/>
     </transform>
-    <transform xil_pn:end_ts="1724530872" xil_pn:in_ck="142570874137911" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1724530871">
+    <transform xil_pn:end_ts="1727305009" xil_pn:in_ck="142570874137911" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1727305008">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="blink.jed"/>
     </transform>
-    <transform xil_pn:end_ts="1724529364" xil_pn:in_ck="142570874124625" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-154879694275837835" xil_pn:start_ts="1724529362">
+    <transform xil_pn:end_ts="1727305125" xil_pn:in_ck="142570874124625" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-154879694275837835" xil_pn:start_ts="1727305122">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1724527063" xil_pn:in_ck="142570874137911" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1724527062">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
   </transforms>

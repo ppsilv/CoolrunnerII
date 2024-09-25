@@ -132,3 +132,9 @@ cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -l
 XSLTProcess blink_build.xml 
 tsim -intstyle ise blink blink.nga 
 hprep6 -s IEEE1149 -n blink -i blink 
+xst -intstyle ise -ifn "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.xst" -ofn "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc blink.ucf -p xc9572xl-VQ44-10 blink.ngc blink.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper blink.ngd 
+XSLTProcess blink_build.xml 
+tsim -intstyle ise blink blink.nga 
+hprep6 -s IEEE1149 -n blink -i blink 

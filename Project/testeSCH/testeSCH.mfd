@@ -1,0 +1,20 @@
+MDF Database:  version 1.0
+MDF_INFO | testeSCH | XC9572XL-10-VQ44
+MACROCELL | 0 | 1 | LED1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | key2
+INPUTP | 1 | 62
+EQ | 1 | 
+   LED1 = !key2;
+
+MACROCELL | 1 | 16 | LED2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | key1
+INPUTP | 1 | 52
+EQ | 1 | 
+   LED2 = !key1;
+
+PIN | key2 | 64 | 0 | N/A | 62 | 1 | 0 | 1
+PIN | key1 | 64 | 0 | N/A | 52 | 1 | 1 | 16
+PIN | LED1 | 536871040 | 0 | N/A | 11
+PIN | LED2 | 536871040 | 0 | N/A | 10

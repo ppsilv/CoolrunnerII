@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sat Aug 24 17:27:00 2024">
+  <application stringID="Xst" timeStamp="Wed Sep 25 19:56:38 2024">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -25,7 +25,7 @@
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 24.04 LTS"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 24.04.1 LTS"/>
       </item>
       <item stringID="User_EnvHost" value="latitude"/>
       <table stringID="User_EnvCpu">
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz"/>
-          <item stringID="speed" value="2999.983 MHz"/>
+          <item stringID="speed" value="3061.135 MHz"/>
         </row>
       </table>
     </section>
@@ -113,7 +113,7 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="1"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="3"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="0"/>
     </section>
   </application>

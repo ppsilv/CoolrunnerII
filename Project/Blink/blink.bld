@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -uc blink.ucf -p xc9572xl-VQ44-10 blink.ngc blink.ngd
 
-Reading NGO file "/home/pdsilva/tmp/Blink/blink.ngc" ...
+Reading NGO file "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -26,7 +26,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 378908 kilobytes
+Total memory usage is 378916 kilobytes
 
 Writing NGD file "blink.ngd" ...
 Total REAL time to NGDBUILD completion:  1 sec

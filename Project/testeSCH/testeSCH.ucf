@@ -1,0 +1,7 @@
+
+
+
+NET "key1"    	   LOC =  "P16";
+NET "key2"    	   LOC =  "P19";
+NET "LED1"       	LOC =  "P39";
+NET "LED2"     	LOC =  "P38";

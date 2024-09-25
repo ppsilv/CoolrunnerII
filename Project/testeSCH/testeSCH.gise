@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="testeSCH.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="testeSCH.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="testeSCH.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="testeSCH.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="testeSCH.jed"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="testeSCH.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="testeSCH.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="testeSCH.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="testeSCH.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="testeSCH.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="testeSCH.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="testeSCH.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="testeSCH.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="testeSCH.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testeSCH.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="testeSCH.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="testeSCH.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="testeSCH.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="testeSCH.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="testeSCH.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="testeSCH.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="testeSCH.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="testeSCH_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="testeSCH_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testeSCH_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="testeSCH_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="testeSCH_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testeSCH_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1727306037" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1727306037">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306038" xil_pn:in_ck="6023078711573782127" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2506849850979045597" xil_pn:start_ts="1727306037">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="testeSCH.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306043" xil_pn:in_ck="182517536714357133" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="2574994523547335296" xil_pn:start_ts="1727306038">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="testeSCH.jhd"/>
+      <outfile xil_pn:name="testeSCH.lso"/>
+      <outfile xil_pn:name="testeSCH.ngc"/>
+      <outfile xil_pn:name="testeSCH.ngr"/>
+      <outfile xil_pn:name="testeSCH.prj"/>
+      <outfile xil_pn:name="testeSCH.stx"/>
+      <outfile xil_pn:name="testeSCH.syr"/>
+      <outfile xil_pn:name="testeSCH.xst"/>
+      <outfile xil_pn:name="testeSCH_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306043" xil_pn:in_ck="6023078711573784303" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784894219589807781" xil_pn:start_ts="1727306043">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306046" xil_pn:in_ck="2697276581410764312" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-736101761533034375" xil_pn:start_ts="1727306043">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="testeSCH.bld"/>
+      <outfile xil_pn:name="testeSCH.ngd"/>
+      <outfile xil_pn:name="testeSCH_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306051" xil_pn:in_ck="6023078711573776810" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="1790041532963615246" xil_pn:start_ts="1727306046">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="testeSCH.gyd"/>
+      <outfile xil_pn:name="testeSCH.mfd"/>
+      <outfile xil_pn:name="testeSCH.nga"/>
+      <outfile xil_pn:name="testeSCH.pad"/>
+      <outfile xil_pn:name="testeSCH.pnx"/>
+      <outfile xil_pn:name="testeSCH.rpt"/>
+      <outfile xil_pn:name="testeSCH.vm6"/>
+      <outfile xil_pn:name="testeSCH.xml"/>
+      <outfile xil_pn:name="testeSCH_build.xml"/>
+      <outfile xil_pn:name="testeSCH_html"/>
+      <outfile xil_pn:name="testeSCH_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306052" xil_pn:in_ck="6023078711573785674" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1727306051">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="testeSCH.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306065" xil_pn:in_ck="6023078711573772388" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-4971510443586489938" xil_pn:start_ts="1727306064">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1727306051" xil_pn:in_ck="6023078711573785674" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1727306050">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

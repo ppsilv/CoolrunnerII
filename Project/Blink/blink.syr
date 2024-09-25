@@ -78,9 +78,10 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/pdsilva/tmp/Blink/blink.vhd" in Library work.
-Entity <blink> compiled.
-Entity <blink> (Architecture <behavioral>) compiled.
+WARNING:HDLParsers:3607 - Unit work/blink is now defined in a different file.  It was defined in "/home/pdsilva/tmp/Blink/blink.vhd", and is now defined in "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.vhd".
+WARNING:HDLParsers:3607 - Unit work/blink/Behavioral is now defined in a different file.  It was defined in "/home/pdsilva/tmp/Blink/blink.vhd", and is now defined in "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.vhd".
+Compiling vhdl file "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.vhd" in Library work.
+Architecture behavioral of Entity blink is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -92,7 +93,7 @@ Analyzing hierarchy for entity <blink> in library <work> (architecture <behavior
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <blink> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "/home/pdsilva/tmp/Blink/blink.vhd" line 48: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.vhd" line 48: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Reset>
 Entity <blink> analyzed. Unit <blink> generated.
 
@@ -104,7 +105,7 @@ Entity <blink> analyzed. Unit <blink> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <blink>.
-    Related source file is "/home/pdsilva/tmp/Blink/blink.vhd".
+    Related source file is "/home/pdsilva/tmp/CoolrunnerII/Project/Blink/blink.vhd".
     Found 19-bit up counter for signal <count>.
     Found 19-bit comparator lessequal for signal <count$cmp_le0000> created at line 53.
     Found 1-bit register for signal <togl>.
@@ -217,15 +218,15 @@ Cell Usage :
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.47 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.37 secs
  
 --> 
 
 
-Total memory usage is 505292 kilobytes
+Total memory usage is 505480 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
